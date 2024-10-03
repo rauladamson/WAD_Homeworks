@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="addPost.html" class="nav-link">Add Post</a>
+            <div class="user-icon"></div>
+        </div>
+
+        <div class="form-container">
+            <form action="index.html" method="post" enctype="multipart/form-data">
+                <label for="post-body">Post body</label>
+                <textarea id="post-body" name="post-body" placeholder="textarea" required></textarea>
+
+                <label for="file-upload">Select file</label>
+                <input type="file" id="file-upload" name="file-upload">
+
+                <button type="submit">Create post</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
