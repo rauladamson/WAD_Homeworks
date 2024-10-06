@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=styles/styles.css>
     <script>
         function validateForm(event) {
             var email = document.getElementById("email").value;
@@ -17,25 +17,34 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="addPost.html" class="nav-link">Add Post</a>
-            <div class="user-icon"></div>
+<header>
+    <nav>
+        <div id="links">
+            <a href="index.html">Home</a>
+            |
+            <a href="addPost.html">Add Post</a>
         </div>
+        <a href="login.html"><img src="images/account_circle_48dp_434343_FILL0_wght400_GRAD0_opsz48.svg" alt="User Profile Icon"></a>
+    </nav>
+</header>
 
-        <div class="form-container">
-            <h2>Welcome to PostIt</h2>
-            <a href="#">Create an account</a>
-            <p>or</p>
-            <p>Please log in</p>
-            <form action="index.html" method="post" onsubmit="validateForm(event)">
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <button type="submit">Log in</button>
-            </form>
-            <a href="#">Forget password</a>
-        </div>
+<main>
+    <div class="form-container">
+        <h2>Welcome to PostIt</h2>
+        <a href="#">Create an account</a>
+        <p>or</p>
+        <p>Please log in</p>
+        <form action="index.html" method="post" onsubmit="validateForm(event)">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Log in</button>
+        </form>
+        <a href="#">Forget password</a>
     </div>
+</main>
+
+<footer>
+    <p>Footer content here</p>
+</footer>
 </body>
 </html>
