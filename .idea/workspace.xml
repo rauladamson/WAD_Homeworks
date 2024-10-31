@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/post_pics/tartu_photo.jpg" afterDir="false" />
+    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="post generation done, need to fix image scaling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/use_me.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +76,21 @@
       <workItem from="1728246400598" duration="3371000" />
       <workItem from="1730376810423" duration="5336000" />
     </task>
+    <task id="LOCAL-00001" summary="post generation done, need to fix image scaling">
+      <created>1730385593771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730385593771</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="post generation done, need to fix image scaling" />
+    <option name="LAST_COMMIT_MESSAGE" value="post generation done, need to fix image scaling" />
   </component>
 </project>
