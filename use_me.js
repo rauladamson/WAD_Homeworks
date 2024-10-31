@@ -11,11 +11,24 @@ function fetchJSONData() {
         .catch((e) => console.error(e));
 }
 
+function createPost(data){
+    let article = document.createElement("article");
+    article.className = "post";
+    let header = document.createElement("header");
+    header.className = "post-header";
+    let prof_pic = document.createElement("img");
+    prof_pic.className = "profile-icon";
+    prof_pic.src = data.user.profile_picture;
+
+    document.getElementById("all_posts").appendChild(article)
+}
+
 function addPosts(json){
     const posts = JSON.parse(json)
     console.log(posts)
     const nr_of_posts = Object.keys(posts.posts).length
     console.log(nr_of_posts)
+    console.log(posts.posts[1].user.profile_picture)
     //TODO: create loop for all posts
     //document.getElementById("all_posts").innerHTML = ""
 }
