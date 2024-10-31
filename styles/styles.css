@@ -132,6 +132,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.profile-icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
