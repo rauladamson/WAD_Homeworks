@@ -92,6 +92,33 @@ footer {
     bottom: 0;
 }
 
+.profile-button {
+    border: none;
+    background: none;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b7b7b7;
+    padding: 8px;
+    min-width: 160px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
 .post {
     background-color: white;
     border: 1px solid #ddd;
