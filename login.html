@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href=styles/styles.css>
+    <script src="scripts/dropdown.js"></script>
     <script>
         function validateForm(event) {
             var email = document.getElementById("email").value;
@@ -24,7 +25,16 @@
             |
             <a href="addPost.html">Add Post</a>
         </div>
-        <a href="login.html"><img src="images/account_circle_48dp_434343_FILL0_wght400_GRAD0_opsz48.svg" alt="User Profile Icon"></a>
+        <div class="dropdown">
+            <button class="profile-button" onclick="toggleDropdown()">
+                <img src="images/account_circle_48dp_434343_FILL0_wght400_GRAD0_opsz48.svg" alt="User Profile Icon">
+            </button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <p>John Doe</p>
+                <p>john.doe@ut.ee</p>
+                <a href="login.html">logout</a>
+            </div>
+        </div>
     </nav>
 </header>
 
