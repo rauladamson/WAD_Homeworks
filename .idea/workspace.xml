@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="fix accident">
+    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="move all js to 1 folder">
+      <change afterPath="$PROJECT_DIR$/validator" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/use_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/use_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/use_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
     <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Rebase.Settings">
-    <option name="NEW_BASE" value="origin/dev" />
+    <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +83,9 @@
       <workItem from="1727968036676" duration="2927000" />
       <workItem from="1728246400598" duration="3371000" />
       <workItem from="1730376810423" duration="5336000" />
-      <workItem from="1730386713290" duration="12000" />
+      <workItem from="1730386713290" duration="59000" />
+      <workItem from="1730386826961" duration="227000" />
+      <workItem from="1730647150894" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="post generation done, need to fix image scaling">
       <created>1730385593771</created>
@@ -105,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730386621263</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="move all js to 1 folder">
+      <created>1730386746776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730386746776</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +136,7 @@
     <MESSAGE value="post generation done, need to fix image scaling" />
     <MESSAGE value="merge" />
     <MESSAGE value="fix accident" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix accident" />
+    <MESSAGE value="move all js to 1 folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="move all js to 1 folder" />
   </component>
 </project>

@@ -133,8 +133,17 @@ footer {
 }
 
 .profile-icon {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 69px;
+    border-radius: 50%;
+}
+.post-content{
+    padding-top: 10px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.post-pic{
+    max-width: 20px;
 }
 
 @media (max-width: 600px) {
