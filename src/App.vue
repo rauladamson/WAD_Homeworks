@@ -1,15 +1,34 @@
 <template>
-  <header>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/signup">Signup</router-link>
-    </nav>
-    <router-view/>
-  </header>
+  <div>
+
+    <Header />
+
+    <router-view />
+
+    <Footer />
+  </div>
 </template>
 
-<style>
+<script>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
-</style>
-<script setup>
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
+
+<style scoped>
+div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+router-view {
+  flex: 1;
+}
+</style>
