@@ -1,19 +1,12 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/The">Signup</router-link> |
+      <router-link to="/signup">Signup</router-link>
     </nav>
+    <router-view/>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
@@ -44,3 +37,5 @@ header {
   }
 }
 </style>
+<script setup>
+</script>
