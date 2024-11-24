@@ -22,7 +22,7 @@ export default {
     <!-- Post Header -->
     <div class="post-header">
       <img
-          :src="'/src/assets/images/prof_pics/' + post.user.profile_picture"
+          :src="'/WAD_Homeworks/src/assets/images/prof_pics/' + post.user.profile_picture"
           alt="Profile"
           class="profile-icon"
       />
@@ -36,7 +36,7 @@ export default {
     <p class="post-content">{{ post.text }}</p>
 
     <!-- Post Image -->
-    <img v-if="post.image" :src="'/src/assets/images/post_pics/' + post.image" alt="Post image" class="post-pic" />
+    <img v-if="post.image" :src="'/WAD_Homeworks/src/assets/images/post_pics/' + post.image" alt="Post image" class="post-pic" />
 
     <!-- Like Button -->
     <button @click="likePost">Like ({{ post.likes }})</button>
