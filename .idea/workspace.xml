@@ -4,38 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="move all js to 1 folder">
-      <change afterPath="$PROJECT_DIR$/Homework_3/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/vite.config.js" afterDir="false" />
+    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="should work now">
+      <change afterPath="$PROJECT_DIR$/Homework_3/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/Header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/Post.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/views/MainPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/views/SignupPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +92,7 @@
       <workItem from="1730386713290" duration="59000" />
       <workItem from="1730386826961" duration="227000" />
       <workItem from="1730647150894" duration="1382000" />
-      <workItem from="1732458544843" duration="1578000" />
+      <workItem from="1732458544843" duration="2703000" />
     </task>
     <task id="LOCAL-00001" summary="post generation done, need to fix image scaling">
       <created>1730385593771</created>
@@ -150,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730386746776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="should work now">
+      <created>1732460265723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732460265723</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +151,7 @@
     <MESSAGE value="merge" />
     <MESSAGE value="fix accident" />
     <MESSAGE value="move all js to 1 folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="move all js to 1 folder" />
+    <MESSAGE value="should work now" />
+    <option name="LAST_COMMIT_MESSAGE" value="should work now" />
   </component>
 </project>
