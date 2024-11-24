@@ -16,12 +16,15 @@ export default {
 </template>
 
 <style scoped>
-.header {
+header {
   display: flex;
   justify-content: center; /* Centers nav horizontally */
   align-items: center; /* Centers nav vertically */
-  height: 100vh; /* Makes header take the full viewport height */
-  background-color: #007bff; /* Blue background */
+  height: 20vh;
+  padding: 16px;
+  background-color: black; /* Blue background */
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
   color: white;
 }
 

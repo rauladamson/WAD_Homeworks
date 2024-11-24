@@ -1,21 +1,25 @@
 <template>
-  <div class="form-container">
-    <h2>Create an Account</h2>
-    <form @submit.prevent="handleSubmit">
-      <input type="email" v-model="formData.email" placeholder="Email" required>
-      <div class="password-section">
-        <input type="password" v-model="formData.password" placeholder="Password" required>
-        <div v-if="!isPasswordValid" class="password-errors">
-          <p>Password is not valid:</p>
-          <ul>
-            <li v-for="(error, index) in passwordErrors" :key="index">
-              {{ error }}
-            </li>
-          </ul>
+  <div class="signup-container">
+    <div class="form-container">
+      <h2>Create an Account</h2>
+      <form @submit.prevent="handleSubmit">
+        <label for="email">Email</label>
+        <input id="email" type="email" v-model="formData.email" placeholder="Email" required>
+        <div class="password-section">
+          <label for="password">Password</label>
+          <input id="password" type="password" v-model="formData.password" placeholder="Password" required>
+          <div v-if="!isPasswordValid" class="password-errors">
+            <p>Password is not valid:</p>
+            <ul>
+              <li v-for="(error, index) in passwordErrors" :key="index">
+                {{ error }}
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <button type="submit" :disabled="!isPasswordValid">Sign Up</button>
-    </form>
+        <button class="signup-btn" type="submit" :disabled="!isPasswordValid">Sign Up</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -68,3 +72,60 @@ export default {
   }
 }
 </script>
+<style>
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: black;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.signup-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 24px; /* Rounded button */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+</style>
