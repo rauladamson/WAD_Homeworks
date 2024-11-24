@@ -4,6 +4,7 @@ export default {
 };
 </script>
 
+
 <template>
   <footer>
     <p>© 2024 AQ. All contents of this website are covered by the GNU General Public License GPL-3.0.</p>
