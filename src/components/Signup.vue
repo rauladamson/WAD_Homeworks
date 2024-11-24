@@ -2,7 +2,6 @@
   <div class="form-container">
     <h2>Create an Account</h2>
     <form @submit.prevent="handleSubmit">
-      <input type="text" v-model="formData.name" placeholder="Full Name" required>
       <input type="email" v-model="formData.email" placeholder="Email" required>
       <div class="password-section">
         <input type="password" v-model="formData.password" placeholder="Password" required>
@@ -26,7 +25,6 @@ export default {
   data() {
     return {
       formData: {
-        name: '',
         email: '',
         password: ''
       },
