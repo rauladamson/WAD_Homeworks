@@ -13,11 +13,17 @@ export default {
 
 <style scoped>
 footer {
-  background-color: #f8f9fa;
+  background-color: black;
+  color: white;
   padding: 1rem;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
+  left: 0;
+}
+footer p{
+  margin: 0;
+  font-size: 14px;
 }
 </style>

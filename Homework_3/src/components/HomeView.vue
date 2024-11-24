@@ -32,10 +32,17 @@ const resetLikes = () => {
 </template>
 
 <style scoped>
-.post-list {
+.home-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
 }
 
 .reset-button {
@@ -45,9 +52,23 @@ const resetLikes = () => {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .reset-button:hover {
   background-color: #0056b3;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px;
+}
+
+.post {
+  width: 600px;
+  margin-bottom: 16px;
 }
 </style>
