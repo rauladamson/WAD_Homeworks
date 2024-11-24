@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../src/components/Homeview'
-import Signup from '../src/components/Signup.vue'
+import HomeView from '../components/HomeView.vue'
+import Signup from '../components/Signup.vue'
 
 const routes = [{
         path: '/',
