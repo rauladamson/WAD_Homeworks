@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="added router">
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_3/src/components/Signup.vue" afterDir="false" />
+    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="improved router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework_3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/TheWelcome.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/components/WelcomeItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +97,7 @@
       <workItem from="1730386713290" duration="59000" />
       <workItem from="1730386826961" duration="227000" />
       <workItem from="1730647150894" duration="1382000" />
-      <workItem from="1732458544843" duration="3719000" />
+      <workItem from="1732458544843" duration="6332000" />
     </task>
     <task id="LOCAL-00001" summary="post generation done, need to fix image scaling">
       <created>1730385593771</created>
@@ -150,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732461326613</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="improved router">
+      <created>1732462386990</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732462386990</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +172,7 @@
     <MESSAGE value="move all js to 1 folder" />
     <MESSAGE value="should work now" />
     <MESSAGE value="added router" />
-    <option name="LAST_COMMIT_MESSAGE" value="added router" />
+    <MESSAGE value="improved router" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved router" />
   </component>
 </project>
