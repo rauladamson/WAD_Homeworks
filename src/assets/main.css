@@ -1,5 +1,6 @@
 @import './base.css';
 
+/* Global styling for the app */
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -24,12 +25,18 @@ a,
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    justify-content: center; /* Center the app horizontally */
+    align-items: center;     /* Center the app vertically */
+    height: 100vh;           /* Ensure it takes full height */
+    margin: 0;               /* Remove default margin */
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start;
+    width: 100%;             /* Full width for app */
+    height: 100%;
+    padding: 0 2rem;         /* Padding on sides */
   }
 }
