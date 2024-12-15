@@ -35,6 +35,44 @@ export default {
       passwordErrors: []
     }
   },
+  methods: {
+    handleSubmit() {
+      if (this.isPasswordValid) {
+        this.SignUp()
+        // Handle form submission
+      }
+    },
+
+    SignUp() {
+      let data = {
+        email: this.formData.email,
+        password: this.formData.password
+      };
+      console.log(data);
+      // using Fetch - post method - send an HTTP post request to the specified URI with the defined body
+      fetch("http://localhost:3000/auth/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "http://localhost:5174",
+        },
+        credentials: 'include', //  Don't forget to specify this if you need cookies
+        body: JSON.stringify(data),
+      })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            this.$router.push("/");
+            //location.assign("/");
+          })
+          .catch((e) => {
+            console.log(e);
+            console.log("error");
+          });
+    },
+  },
+
+
   computed: {
     isPasswordValid() {
       this.passwordErrors = []
@@ -60,14 +98,6 @@ export default {
       }
 
       return this.passwordErrors.length === 0
-    }
-  },
-  methods: {
-    handleSubmit() {
-      if (this.isPasswordValid) {
-        console.log('Form submitted:', this.formData)
-        // Handle form submission
-      }
     }
   }
 }
