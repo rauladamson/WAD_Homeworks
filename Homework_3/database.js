@@ -34,7 +34,7 @@ const createTblQuery = `
 const createTblQuery2 = `
     CREATE TABLE IF NOT EXISTS "posts" (
         id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-        body VARCHAR(280) NOT NULL,
+        body VARCHAR(280),
         picture VARCHAR(200)
     );`;
 
