@@ -9,7 +9,7 @@ export default {
     <nav>
       <div id="links">
         <router-link to="/">Main Page</router-link>
-        <router-link to="/signup">Signup</router-link>
+        <router-link to="/login">Log in</router-link>
         <router-link to="/contact">Contact</router-link>
       </div>
     </nav>
