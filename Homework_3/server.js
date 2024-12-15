@@ -1,6 +1,6 @@
 // server.js
 import express from 'express'
-import * as pool from './database.js'
+import pool from './database.js'
 import cors from 'cors'
 const port = process.env.PORT || 3000;
 import cookieParser from 'cookie-parser'
