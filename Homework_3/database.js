@@ -2,7 +2,7 @@
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user: "postgres",
-    password: "[add your password here]",
+    password: "isherenow",
     database: "testWad",
     host: "localhost",
     port: "5432"
@@ -33,7 +33,7 @@ const createTblQuery = `
 
 const createTblQuery2 = `
     CREATE TABLE IF NOT EXISTS "posts" (
-        id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+        id SERIAL PRIMARY KEY DEFAULT UNIQUE,
         body VARCHAR(280),
         picture VARCHAR(200)
     );`;
@@ -45,7 +45,7 @@ execute(createTblQuery).then(result => {
 });
 execute(createTblQuery2).then(result => {
     if (result) {
-        console.log('Table "users" is created');
+        console.log('Table "posts" is created');
     }
 });
 module.exports = pool;
