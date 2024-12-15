@@ -13,6 +13,21 @@ const store = createStore({
         };
     },
     mutations: {
+        deleteAllPosts(state) {
+            state.posts = [];
+        },
+        addPost(state, newPost) {
+            state.posts.push(newPost);
+        },
+        updatePost(state, updatedPost) {
+            const index = state.posts.findIndex((p) => p.id === updatedPost.id);
+            if (index !== -1) {
+                state.posts[index].text = updatedPost.text;
+            }
+        },
+        deletePost(state, postId) {
+            state.posts = state.posts.filter((p) => p.id !== postId);
+        },
         incrementLikes(state, postId) {
             const post = state.posts.find((p) => p.id === postId);
             if (post) post.likes++;

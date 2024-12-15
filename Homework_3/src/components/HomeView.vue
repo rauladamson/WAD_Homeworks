@@ -1,16 +1,33 @@
 <script setup>
 import { computed } from "vue";
 import { useStore } from "vuex";
-import Post from "@/components/Post.vue"; // Ensure the path is correct
+import Post from "@/components/Post.vue";
+import router from "@/router/index.js"; // Ensure the path is correct
 
 const store = useStore();
 
 // Get the list of posts from Vuex
 const posts = computed(() => store.state.posts);
 
+// Navigate to APost view
+const goToPost = (postId) => {
+  router.push({ name: "APost", params: { id: postId } });
+};
+
+// Navigate to AddPost view
+const goToAddPost = () => {
+  router.push({ name: "AddPost" });
+};
+
 // Reset all likes to zero
 const resetLikes = () => {
   store.commit("resetLikes");
+};
+
+const deleteAllPosts = () => {
+  if (confirm("Are you sure you want to delete all posts?")) {
+    store.commit("deleteAllPosts"); // Vuex mutation
+  }
 };
 </script>
 
@@ -19,6 +36,8 @@ const resetLikes = () => {
     <h1>Main Page</h1>
     <!-- Reset Button -->
     <button @click="resetLikes" class="reset-button">Reset All Likes</button>
+    <button @click="goToAddPost" class="reset-button">Add Post</button>
+    <button @click="deleteAllPosts" class="reset-button">Remove Posts</button>
 
     <!-- Post List -->
     <div class="post-list">
@@ -26,6 +45,7 @@ const resetLikes = () => {
           v-for="post in posts"
           :key="post.id"
           :postId="post.id"
+          @click="goToPost(post.id)"
       />
     </div>
   </div>
