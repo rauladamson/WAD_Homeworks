@@ -1,10 +1,10 @@
 // server.js
-const express = require('express');
-const pool = require('./database');
-const cors = require('cors')
+import express from 'express'
+import * as pool from './database.js'
+import cors from 'cors'
 const port = process.env.PORT || 3000;
-const cookieParser = require('cookie-parser');
-const jwt = require('jsonwebtoken');
+import cookieParser from 'cookie-parser'
+import jwt from 'jsonwebtoken'
 
 const app = express();
 

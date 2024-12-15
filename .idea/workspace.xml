@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="fix">
+    <list default="true" id="06ad56cc-9e15-4824-8d02-8465c2cdd233" name="Changes" comment="something">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_3/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework_3/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_3/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +70,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.11.0",
+    "javascript.nodejs.core.library.typings.version": "22.10.2",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Michael/IdeaProjects/WAD_Homeworks/Homework_3",
     "node.js.detected.package.eslint": "true",
@@ -126,7 +127,7 @@
       <workItem from="1730647150894" duration="1382000" />
       <workItem from="1732458544843" duration="6332000" />
       <workItem from="1734284050228" duration="1289000" />
-      <workItem from="1734285908505" duration="3624000" />
+      <workItem from="1734285908505" duration="4959000" />
     </task>
     <task id="LOCAL-00001" summary="post generation done, need to fix image scaling">
       <created>1730385593771</created>
@@ -225,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734288687508</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="something">
+      <option name="closed" value="true" />
+      <created>1734289674890</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734289674890</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,8 +262,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="might need these" />
     <MESSAGE value="auth" />
-    <MESSAGE value="something" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="something" />
+    <option name="LAST_COMMIT_MESSAGE" value="something" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 // database.js
-const Pool = require('pg').Pool;
+import pg from 'pg'
+const { Pool } = pg
 const pool = new Pool({
     user: "postgres",
     password: "isherenow",
@@ -33,7 +34,7 @@ const createTblQuery = `
 
 const createTblQuery2 = `
     CREATE TABLE IF NOT EXISTS "posts" (
-        id SERIAL PRIMARY KEY DEFAULT UNIQUE,
+        id SERIAL PRIMARY KEY,
         body VARCHAR(280),
         picture VARCHAR(200)
     );`;
@@ -48,4 +49,4 @@ execute(createTblQuery2).then(result => {
         console.log('Table "posts" is created');
     }
 });
-module.exports = pool;
+export default pool;
