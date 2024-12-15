@@ -3,11 +3,7 @@ import { computed } from "vue";
 import { useStore } from "vuex";
 import Post from "@/components/Post.vue";
 import router from "@/router/index.js"; // Ensure the path is correct
-
-const store = useStore();
-
-// Get the list of posts from Vuex
-const posts = computed(() => store.state.posts);
+import auth from "../auth";
 
 // Navigate to APost view
 const goToPost = (postId) => {

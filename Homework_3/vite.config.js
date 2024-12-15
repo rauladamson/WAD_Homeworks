@@ -7,13 +7,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   base: "/WAD_Homeworks/",
-  server: {
-    port: 5174,
-  },
   plugins: [
     vue(),
     vueDevTools(),
   ],
+  server: {
+    port: 5173,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -4,11 +4,11 @@
       <h2>Sign in to your account</h2>
       <form @submit.prevent="handleSubmit">
         <label for="email">Email</label>
-        <input id="email" type="email" v-model="formData.email" placeholder="Email" required />
+        <input id="email" type="email" v-model="formData.email" placeholder="Email" required/>
 
         <div class="password-section">
           <label for="password">Password</label>
-          <input id="password" type="password" v-model="formData.password" placeholder="Password" required />
+          <input id="password" type="password" v-model="formData.password" placeholder="Password" required/>
           <div v-if="passwordErrors.length" class="password-errors">
             <p>Password is not valid:</p>
             <ul>
@@ -21,7 +21,9 @@
 
         <button class="login-btn" type="submit" :disabled="isSubmitting">Log In</button>
       </form>
-      <p>Don't have an account? <button class="signup-link" @click="navigateToSignup">Sign Up</button></p>
+      <p>Don't have an account?
+        <button class="signup-link" @click="navigateToSignup">Sign Up</button>
+      </p>
     </div>
   </div>
 </template>
@@ -74,9 +76,12 @@ export default {
 
       try {
         // Todo: Replace with actual API call!!!!!!!!!!
-        const response = await fetch("YOUR_API_URL/login", {
+        const response = await fetch("http://localhost:3000/auth/login", {
           method: "POST",
-          headers: {"Content-Type": "application/json"},
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:5174",
+          }, credentials: 'include',
           body: JSON.stringify(this.formData),
         });
         if (!response.ok) {
@@ -84,7 +89,7 @@ export default {
         }
         const data = await response.json();
         console.log("Login successful:", data);
-        this.$router.push("/home");
+        location.assign("/");
       } catch (error) {
         console.error("Error during login:", error);
         alert("Login failed. Please check your credentials.");
